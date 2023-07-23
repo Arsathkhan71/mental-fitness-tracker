@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  /* height: 100%; */
+  width: 100%;
+
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image, form, .text {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.text {
+  flex-direction: column;
+  padding: 20px 30px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.text h1 {
+  font-size: 50px;
+  width: 90%;
+}
+
+.text p {
+  font-size: 22px;
+  color: gray;
+  padding: 10px 0;
+  width: 90%;
+
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.text a {
+  height: 40px;
+  background: #1d1d1d;
+  color: white;
+  padding: 5px 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 600;
+
+  align-self: flex-start;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+
+.text a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.image img {
+  width: 100%;
+  object-fit: fit;
+  z-index: 0;
+
+}
+
+.image img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+
+.input-field {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: calc(100% - 20px);
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputs .left, .inputs .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-field label {
+  padding: 10px 0;
+}
+
+.input-field input, .input-field select {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  height: 40px;
+  border-radius: 10px;
+  background: #ebebeb;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background: #1d1d1d;
+  color: #fff;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+footer {
+  /* max-height: 100px; */
+  height: 100%;
+  width: 100%;
+  background: #f0c808;
+  z-index: 1;
+}
